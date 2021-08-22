@@ -3,7 +3,11 @@
 //getPokemon();
 $("#btn").click(function () {
     let random =  Math.floor(Math.random() * 100) +1;
+    let mySound = new Audio('audio/pokeball_sound_effects_mp3cut_1.mp3')
+    mySound.volume = 0.04;
+    mySound.play();
     getPokemon(random);
+
 });
 
 function getPokemon(id) {
